@@ -5,31 +5,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Card Layout</title>
     <style>
+        *{
+            padding: 0%;margin: 0%;box-sizing: border-box;
+        }
+        #container{
+            display: inline-flex;
+        }
         .para{
-
-            background-color:teal;
-            width: 200px;
-            height: 300px;
+            
+            background-color:white;
+            width: 300px;
+            height: 400px;
             overflow: hidden;
-            border: black;
-            border-bottom: thick;
+            border:2px solid whitesmoke;
+            padding: 10px;
+            margin: 20px;
+            border-radius: 20px;
         }
         .heading{
-            border-radius: 100px;
+            border: 100px;
+            text-align: center;
+            color: white;
             
+        }
+        
+        .para img{
+            width: 100%;
+            height: 150px;
+            border-radius: 20px;
+            margin-bottom: 10px;
+        }
+        .button{
+            text-align: center;
+            margin-top: 10px;
+            text-decoration: none;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            background: red;
+            padding: 10px 15px;
+            border-radius: 10px;
         }
     </style>
 </head>
-<body>
+<body style="background-color: darkgray;">
     <div class="heading" >
         <h1>Practical-6 : Create Following Layout usimg css layout properties</h1>
     </div>
-<div class="para">
+<div id="container">
+    
+    <div class="para">
+        <img src="./assets/intro.png" alt="image">
     <p>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque odit neque id eaque sed commodi dolor atque veritatis, provident iusto tempore repellendus eligendi vitae quidem soluta labore molestias. Error sequi, delectus, tenetur enim perspiciatis est, quaerat eaque deleniti optio impedit amet? Asperiores soluta nesciunt error. Minima maiores asperiores nostrum ad accusamus sit, architecto esse cum tenetur soluta quas aut placeat aliquid quos ab ea necessitatibus aspernatur qui sapiente id harum quibusdam reiciendis dolore sunt. Magnam unde modi suscipit, asperiores laboriosam corporis soluta, nesciunt odio iure in,
-    distinctio laborum minima numquam amet esse voluptates adipisci maiores molestias aperiam placeat? Provident, quae!
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque odit neque id eaque sed commodi dolor atque veritatis, provident iusto 
+    tempore repellendus eligendi vitae quidem soluta labore molestias. Error sequi, delectus, tenetur enim perspiciatis est,
+     
+    
+    </p> 
+    <div class="button" >
+        <a href="#" class="my button">Read More</a>
+    </div>
+
+    </div>
+
+    <div class="para">
+        <img src="./assets/hero.png" alt="image">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum expedita cum officia minus neque a facere iste dolores sit. Sed autem
+    quos repellat vitae explicabo? Explicabo sapiente cumque, provident ea impedit similique consequuntur eius itaque repellat, temporibus
     </p>
-    <img src="intro.png" alt="Introduction to HTML"> 
+    <div class="button" >
+        <a href="#" class="my button">Read More</a>
+    </div>
+    </div>
+
+    <div class="para">
+        <img src="./assets/jquery.png" alt="image">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum expedita cum officia minus neque a facere iste dolores sit. Sed autem
+        quos repellat vitae explicabo? Explicabo sapiente cumque, provident ea impedit similique consequuntur eius itaque repellat, temporibus
+         laborum dignissimos magnam
+        </p>
+        <div class="button" >
+            <a href="#" class="my button">Read More</a>
+        </div>
+        </div>
+
+        <div class="para">
+            <img src="./assets/boot.png" alt="image">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum expedita cum officia minus neque a facere iste dolores sit. Sed autem
+            quos repellat vitae explicabo? Explicabo sapiente cumque, provident ea impedit similique consequuntur eius itaque repellat, tem
+            </p>
+            <div class="button" >
+                <a href="#" class="my button">Read More</a>
+            </div>
+            </div>
+
 </div>
 
 </body>
