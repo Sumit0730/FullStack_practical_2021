@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-7</title>
+    <style>
+        .container{
+            margin: 0%;padding: 0%;box-sizing: border-box;
+        }
+        .header{
+            background: grey;
+            height: 60px;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        .banner{
+            height: 300px;
+            width: 100%;
+            background: white;
+            margin-bottom: 10px;
+        }
+        .sec-1{
+            display: inline-flex;
+            height: 200px;
+            width: 100%;
+            margin: auto;
+        }
+        .c1{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: orangered;
+            margin-left: 40px;
+            border: 5px solid goldenrod;
+        }
+        .c2{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: orangered;
+            margin-left: 40px;
+            border: 5px solid goldenrod;
+        }
+        .c3{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: orangered;
+            margin-left: 40px;
+            border: 5px solid goldenrod;
+        }
+        .c4{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: orangered;
+            margin-left: 40px;
+            border: 5px solid goldenrod;
+        }
+        .sec-2{
+            width: 100%;
+            height: 400px;
+            display: inline-flex;
+        }
+        .sec-2::after{
+            content: " ";
+            display: block;
+            clear: both;
+        }
+        .main{
+            width: 48%;
+            background: grey;
+            float: left;
+            border: goldenrod 5px solid;
+        }
+        .article{
+            width: 50%;
+            float: right;
+            margin-left: 20px;
+        }
+        .ar-1{
+            margin-bottom: 10px;
+            height: 123px;
+            width: 100%;
+            
+            
+        }
+        .ar-2{
+            margin-bottom: 10px;
+            height: 123px;
+            width: 100%;
+            
+            
+        }
+        .ar-3{
+            height: 128px;
+            width: 100%;
+            
+            
+        }
+        .sec-3{
+            width: 100%;
+            height: 400px;
+            display: inline-flex;
+        }
+        .b1{
+            height: 400px;
+            width: 24%;
+            background:whitesmoke;
+            margin-left: 10px;
+            border: yellowgreen solid 6px;
+        }
+        .b2{
+            height: 400px;
+            width: 24%;
+            background: coral;
+            margin-left: 10px;
+            border: yellowgreen solid 6px;
+        }
+        .b3{
+            height: 400px;
+            width: 24%;
+            background:yellow;
+            margin-left: 10px;
+            border: yellowgreen solid 6px;
+        }
+        .b4{
+            height: 400px;
+            width: 24%;
+            background:violet;
+            margin-left: 10px;
+            border: yellowgreen solid 6px;
+        }
+        .footer{
+            width: 100%;
+            height: 300px;
+            
+        }
+        .header .menu{
+            list-style: none;
+           float: left;
+            
+        }
+        .menu li{
+            display: inline-block;
+            line-height: 35px;
+            padding: 0 20px;
+            
+        }
+        .menu li a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            text-transform: uppercase;
+            padding: 0px 20px;
+            transition: .4s;
+            
+        }
+        .menu li a:hover{
+            color: cyan;
+        }
+
+        .banner .img1{
+            width: 47%;
+            height: 300px;
+            border-radius: 10px;
+            float: left;
+        }
+        .banner .img2{
+            width: 50%;
+            height: 300px;
+            border-radius: 10px;
+            float: right;
+        }
+        .sec-1 .c1 img{
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+        .sec-1 .c2 img{
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+
+        .sec-1 .c3 img{
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+        .sec-1 .c4 img{
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+        .sec-2 .main img{
+            width: 100%;
+            height: 100%;
+        }
+        .sec-2 .article .ar-1 img{
+            width: 60%;
+            height: 120px;
+            margin-left: 30px;
+        }
+        .sec-2 .article .ar-2 img{
+            width: 60%;
+            height: 120px;
+            margin-left: 30px;
+        }
+        .sec-2 .article .ar-3 img{
+            width: 60%;
+            height: 120px;
+            margin-left: 30px;
+        }
+        .footer img{
+            width: 100%;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+
+    <div class="banner">
+        <img class="img1" src="./assets/t.jpg" alt="image">        
+        <img class="img2" src="./assets/desk.png" alt="image">
+        
+    </div>
+
+
+    <h1 style="text-align: center;">SECTION-1</h1>
+    <div class="sec-1">
+        <div class="c1">
+            <img src="./assets/male.png" alt="image">
+        </div>
+        <div class="c2">
+            <img src="./assets/women.png" alt="image">
+        </div>
+        <div class="c3">
+            <img src="./assets/men.png" alt="image">
+        </div>
+        <div class="c4">
+            <img src="./assets/female.png" alt="image">
+        </div>
+    </div>
+    <h1 style="text-align: center;">SECTION-2</h1>
+    <div class="sec-2">
+        <div class="main">
+           <img src="./assets/main.png" alt="image">
+        </div>
+        <div class="article">
+            <div class="ar-1"> 
+                <img src="./assets/a1.png" alt="image">
+            </div>
+            <div class="ar-2">
+                <img src="./assets/a2.png" alt="image">
+            </div>
+            <div class="ar-3">
+                <img src="./assets/a3.png" alt="image">
+            </div>
+        </div>
+    </div>
+    <h1 style="text-align:center;">SECTION-3</h1>
+    <div class="sec-3">
+        <div class="b1">
+            <h2 style="text-align: center; color:blue;">HTML</h2>
+            <p style="text-align:centre; color:teal; padding: 10px; ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam perferendis a aspernatur unde error illum amet excepturi tempora itaque, 
+                id praesentium neque iure possimus velit est dolore nostrum pariatur sunt quaerat, explicabo hic. Rerum culpa unde ab nemo obcaecati,
+                 cupiditate, eum voluptate dolor facilis esse ex ratione accusantium?
+                 Corporis culpa numquam ipsam veritatis repellendus veniam quia repellat ad, asperiores perspiciatis. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Inventore culpa cum, nobis minus velit dolorem deserunt aperiam exercitationem expedita! A!</p>
+        </div>
+        <div class="b2">
+            <h2 style="text-align: center; color:blue;">CSS</h2>
+            <p style="text-align:centre; color:teal; padding: 10px; ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam perferendis a aspernatur unde error illum amet excepturi tempora itaque, 
+                id praesentium neque iure possimus velit est dolore nostrum pariatur sunt quaerat, explicabo hic. Rerum culpa unde ab nemo obcaecati,
+                 cupiditate, eum voluptate dolor facilis esse ex ratione accusantium?
+                 Corporis culpa numquam ipsam veritatis repellendus veniam quia repellat ad, asperiores perspiciatis. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Inventore culpa cum, nobis minus velit dolorem deserunt aperiam exercitationem expedita! A!</p>
+        </div>
+        <div class="b3">
+            <h2 style="text-align: center; color:blue;">NODE-JS</h2>
+            <p style="text-align:centre; color:teal; padding: 10px; ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam perferendis a aspernatur unde error illum amet excepturi tempora itaque, 
+                id praesentium neque iure possimus velit est dolore nostrum pariatur sunt quaerat, explicabo hic. Rerum culpa unde ab nemo obcaecati,
+                 cupiditate, eum voluptate dolor facilis esse ex ratione accusantium?
+                 Corporis culpa numquam ipsam veritatis repellendus veniam quia repellat ad, asperiores perspiciatis. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Inventore culpa cum, nobis minus velit dolorem deserunt aperiam exercitationem expedita! A!</p>
+        </div>
+        <div class="b4">
+            <h2 style="text-align: center; color:blue;">BOOTSTRAP</h2>
+            <p style="text-align:centre; color:teal; padding: 10px; ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam perferendis a aspernatur unde error illum amet excepturi tempora itaque, 
+                id praesentium neque iure possimus velit est dolore nostrum pariatur sunt quaerat, explicabo hic. Rerum culpa unde ab nemo obcaecati,
+                 cupiditate, eum voluptate dolor facilis esse ex ratione accusantium?
+                 Corporis culpa numquam ipsam veritatis repellendus veniam quia repellat ad, asperiores perspiciatis. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Inventore culpa cum, nobis minus velit dolorem deserunt aperiam exercitationem expedita! A!</p>
+        </div>
+    </div>
+    <h1 style="text-align: center;">SECTION-4</h1>
+    <div class="footer">
+        <img src="./assets/foot1.png" alt="image">
+    </div>
+</div>
+</body>
+</html>
