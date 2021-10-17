@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-13</title>
+    <style>
+        h1{
+            text-align: center;
+            text-transform: uppercase;
+            color: brown;
+            font-size: 45px;
+            margin-top: 25px;
+        }
+        *{
+            background:gray;
+            padding: 0%;
+            margin: 0%;
+        }
+        .btn button{
+            padding: 30px;
+            margin: 30px;
+            background: chocolate;
+            border-radius: 10px;
+            display: inline-flex;
+            justify-content: center;
+            font-size: 10px;
+        }
+        .btn .bt1{
+            margin-left: 42%;
+        }
+        a{
+            font-size: 20px;
+        }
+  
+    </style>
+</head>
+<body>
+
+    <h1>counter</h1>
+    <script type="text/javascript">
+       var clicks = 0;
+
+        function onClick() {
+        clicks += 1;
+        document.getElementById("clicks").innerHTML = clicks;
+        };
+        function inclick(){
+            if (clicks>0){
+            clicks -= 1;
+        document.getElementById("clicks").innerHTML = clicks;
+            }
+        }
+    
+        </script>
+        <div class="btn">
+        <button  class="bt1" type="button" onClick="onClick()">+</button>
+        <a id="clicks">0</a>
+        <button type="button" onClick="inclick()">-</button>
+        </div>
+        
+</body>
+</html>
